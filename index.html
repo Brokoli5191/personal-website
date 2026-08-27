@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Brokoli5191's personal webpage! Explore all of my projects, pictures, and thoughts. Featuring a terminal-inspired design with stunning effects by richardapps.">
+	<meta name="author" content="Richard-Apps, Brokoli5191">
+
+	<title>Brokoli5191's webpage</title>
+	
+	<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+	<link rel="canonical" href="https://www.richardapps.net">
+
+	<script type="module" src="/src/js/main.js" defer></script>
+
+	<link rel="preload" as="font" href="/assets/fonts/terminus-webfont.woff2" type="font/woff2" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="/assets/css/style.css?v=4"> <!-- increase version after significant changes to prevent browsers from using a old cached version (cache busting) -->
+
+	<meta property="og:title" content="RichardApps">
+	<meta property="og:description" content="Brokoli5191's personal webpage! Explore all of my projects, pictures, and thoughts. Featuring a terminal-inspired design with stunning effects by richardapps.">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="https://codeberg.org/Brokoli5191">
+	
+	<meta name="keywords" content="Brokoli5191, Kloflo5191">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="7 days">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	<style>
+        .no-fouc {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="no-fouc">
+	<script>
+		// prevent unstyled content css flash in firefox
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.remove('no-fouc');
+        });
+	</script>
+	<noscript>
+		<h2 id="noscript-warning">You are viewing a limited version of this site because JavaScript is disabled.</h2>
+		<style>
+			.no-fouc {
+				visibility: visible;
+			}
+			.hide-noscript {
+				display: none;
+			}
+			#noscript-warning {
+				color: rgb(245, 67, 67);
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 1em;
+			}
+		</style>
+	</noscript>
+	<video
+		id="rain-vid"
+		src="/assets/videos/rain-bg.mp4"
+		poster="/assets/images/rain-bg-static.png"
+		preload="metadata"
+		onloadstart="this.playbackRate = 0.8;"
+		autoplay
+		muted
+		loop
+		playsinline>
+	</video>
+	<img id="grunge-overlay" loading="lazy">
+	<img id="noise-overlay" loading="lazy">
+	<div id="snow-container"></div>
+	<div id="canvas">
+		<header>
+			<pre id="title"> _______  ______    _______  ___   _  _______  ___      ___   _______  ____   _______  ____              _   _
+|  _    ||    _ |  |       ||   | | ||       ||   |    |   | |       ||    | |  _    ||    |            (.)_(.)
+| |_|   ||   | ||  |   _   ||   |_| ||   _   ||   |    |   | |   ____| |   | | | |   | |   |         _ (   _   ) _
+|       ||   |_||_ |  | |  ||      _||  | |  ||   |    |   | |  |____  |   | | |_|   | |   |        / \/`-----'\/ \
+|  _   | |    __  ||  |_|  ||     |_ |  |_|  ||   |___ |   | |_____  | |   | |___    | |   |      __\ ( (     ) ) /__
+| |_|   ||   |  | ||       ||    _  ||       ||       ||   |  _____| | |   |     |   | |   |      )   /\ \._./ /\   (
+|_______||___|  |_||_______||___| |_||_______||_______||___| |_______| |___|     |___| |___|       )_/ /|\   /|\ \_(</pre>
+			<h1 id="sub-title">informations, games, photography and personal projects!</h1>
+			<p id="toggle-effects" class="hide-noscript">Want some fancy effects? Click <a id="toggle-effects-link">HERE</a> to turn them on.</p>
+		</header>
+		<br>
+		<p>Some things you might be interested in:</p>
+		<nav id="nav-tabs">
+			<ul>
+				<li><a id="home-tab" class="tab-switcher" href="#home">Home</a></li>
+				<li><a id="projects-tab" class="tab-switcher" href="#projects">Projects</a></li>
+				<li><a id="pictures-tab" class="tab-switcher" href="#pictures">Pictures</a></li>
+				<li class="hide-noscript"><a id="blog-tab" class="tab-switcher" href="#blog">Blog</a></li>
+				<li class="no-mobile"><a id="resources-tab" class="tab-switcher" href="#resources">Resources</a></li>
+				<li><a id="about-tab" class="tab-switcher" href="#about">About</a></li>
+			</ul>
+		</nav>
+
+		<div id="home" class="tabs">
+			<div class="grid">
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<h2 id="welcome-title">Welcome visitor!</h2>
+						<p><em>★ Updated on JANUARY 19TH, 2026:</em></p>
+						<br>
+						<p>This is my personal webpage with all my projects, images, news and more! Be sure to take a look around.</p>
+						<br>
+						<p>Any questions? You might find them answered on the about page: <a href="#about">ABOUT</a></p>
+						<p>Btw, this [<a href="https://codeberg.org/Brokoli5191/pages" target="_blank">website</a>] is completely open source! I forked it from Richard: [<a href="https://github.com/Richard-Apps/richardapps-web" target="_blank">link</a>]</p>
+						<br class="no-mobile">
+						<p class="no-mobile">Don't forget to check out the different themes for the website! They are located below this post on the right.</p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<details open>
+							<summary>
+								<h2>Latest Updates</h2>
+							</summary>
+							<div id="update-list">
+								<p><em>★ JANUARY 20TH, 2026:</em> Finished adding my text, website & everything else.</p>
+								<p><em>★ JANUARY 19TH, 2026:</em> Stealing the website from Richard and adding my text :).</p>
+								<p><em>★ ALL THE TIME:</em> Appreciate what Richard has done.</p>
+							</div>
+						</details>
+					</div>
+					<div class="grid-row-box grid-row-box-shrink hide-noscript">
+						<div id="theme-selector">
+							<details open>
+								<summary>
+									<h2>Themes</h2>
+								</summary>
+								<div id="theme-list"></div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="tabs">
+			<h2>PROJECTS</h2>
+			<h3 class="no-mobile">A short list of projects made by me!</h3>
+			<ul id="pr-list">
+				<li>
+					<p class="pr-title">Counter-Strike 2 autoexec files</p>
+					<p class="pr-desc">My automatic execution configuration files for Counter-Strike 2.</p>
+					<div class="tag-list">
+						<p class="tag">GAME</p>
+						<p class="tag">CFG</p>
+						<p class="tag">CS</p>
+						<p class="tag active">Done</p>
+					</div>
+					<br>
+					<p><a href="https://codeberg.org/Brokoli5191/cs2-autoexec" target="_blank">[VISIT PAGE]</a></p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="pictures" class="tabs">
+			<h2>PICTURES</h2>
+			<div id="pictures-list">
+				<nav class="hide-noscript">
+					<ul>
+						<li><a class="tab-active pic-coll-tabs" data-id="photography">Photography</a></li>
+					</ul>
+				</nav>
+				<div id="photography" class="pic-coll">
+					<h3>Here are some images I took in my holidays!</h3>
+					<p class="no-mobile"><em>Hover over them to view more information!</em></p>
+					<div class="row row-photography">
+						<div class="img-container">
+							<img src="/assets/images/pictures-tab/P1.jpg" loading="lazy" alt="A picture of the central train station of Prague.">
+							<div class="img-desc"><p>The famous central train station of Prague! There were no clouds on that day!</p></div>
+						</div>
+						<div class="img-container">
+							<img src="/assets/images/pictures-tab/P2.jpg" loading="lazy" alt="A close-up picture of a chipmunk.">
+							<div class="img-desc"><p>The Berlin Cathedral! I shot this picture at a sightseeing tour through Berlin!</p></div>
+						</div>
+						<div class="img-container">
+							<img src="/assets/images/pictures-tab/P3.jpg" loading="lazy" alt="A picture of a bird.">
+							<div class="img-desc"><p>I found this cool-looking bird! Maybe it's searching some snacks?</p></div>
+						</div>
+						<div class="img-container">
+							<img src="/assets/images/pictures-tab/P4.jpg" loading="lazy" alt="A minimalistic picture of two skyscrapers in London.">
+							<div class="img-desc"><p>Nothing much to say here, but sometimes even the simple, minimalistic photos of London turn out quite cool!</p></div>
+						</div>
+					</div>
+					<p>All these were taken with my Galaxy s23, a surprisingly good phone for its convenient size.</p>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div id="resources" class="tabs">
+			<h2>Resources</h2>
+			<p>Some projects i really like!</p>
+			<br>
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<p>- computer -</p>
+						<p>-> atlasOS [<a href="https://atlasos.net/" target="_blank">link</a>] <em>You're sick of your Windows being full of bloat? AtlasOS has you covered. It removes bloatware and optimizes performance.</em></p>
+						<p>-> end-4's Dotfiles [<a href="https://github.com/end-4/dots-hyprland" target="_blank">link</a>] <em>These are the Hyprland dotfiles from end-4, which i find cool.</em></p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<p>- phone -</p>
+						<p>-> instafel [<a href="https://www.instafel.app" target="_blank">link</a>] <em>The best Instagram alpha experience!</em></p>
+						<p>-> cloudstream [<a href="https://github.com/recloudstream/cloudstream" target="_blank">link</a>] <em>Best service movie/series watching app!</em></p>
+						<p>-> better Untis [<a href="https://github.com/SapuSeven/BetterUntis" target="_blank">link</a>] <em>Open source implementation of the "Untis" app.</em></p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<p>- privacy -</p>
+						<p>-> awesome privacy [<a href="https://github.com/pluja/awesome-privacy" target="_blank">link</a>] <em>List of privacy respecting applications.</em></p>
+						<p>-> proton services [<a href="https://proton.me" target="_blank">link</a>] <em>Proton is a company which offers end-to-end encryption for their services.</em></p>
+						<p>-> grapheneos [<a href="https://grapheneos.org/" target="_blank">link</a>] <em>An open source, privacy respecting OS which is based on AOSP.</em></p>
+						<br>
+					</div>
+				</div>
+		</div>
+
+		<div id="blog" class="tabs">
+			<h1>Blog</h1>
+			<div id="blog-window"></div>
+		</div>
+
+		<div id="about" class="tabs">
+			<div class="grid">
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<h2>About me</h2>
+						<p>Hey! Firstly, thank you for visiting my website! Glad to have you here.</p>
+						<p>As to me, my name is Brokoli5191. <em>(Crazy, right?)</em> I'm really interested in almost everything computer related!</p>
+						<p>I've done some coding, photography, a little bit game-development - even installed Linux!</p>
+						<p><em>I'm no real expert in any of these, I just do them as a hobby.</em></p>
+					</div>
+					<div class="grid-row-box">
+						<h2>Skills</h2>
+						<p>Some things I learned during my journey:</p>
+						<p>-> Gimp <em class="no-mobile">I use it to edit images, whenever i have to!</em></p>
+						<p>-> HTML/CSS/JS <em class="no-mobile">Obviously used to create this site.</em></p>
+						<p>-> Python <em class="no-mobile">Useful for a lot of projects. Still in the process of learning it, though.</em></p>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-row-box">
+						<h2>Pseudonym</h2>
+						<p>Since I don't want to have my real name listed on any webpage, I go by Brokoli5191 or KloFlo5191. You can find me almost everywhere throughout social media & co.</p>
+					</div>
+					<div class="grid-row-box">
+						<h2>Site Goals</h2>
+						<p>Why did I made this site you may ask?</p>
+						<p>I saw it and immediately thought "This looks so cool, I need this for myself".</p>
+						<p>Long live <a href="https://github.com/Richard-Apps" target="_blank">Richard</a>!</p>
+					</div>
+					<div class="grid-row-box">
+						<h2>Social Media</h2>
+						<!-- Don't forget to add the fa-fw class for fixed-width -->
+						<p class="contact-link"><i class="fa-brands fa-instagram fa-fw"></i><a href="https://instagram.com/kloflo5191" target="_blank">Instagram</a></p>
+						<p class="contact-link"><i class="fa-brands fa-github fa-fw"></i><a href="https://codeberg.org/brokoli5191" target="_blank">Codeberg</a></p>
+						<p class="contact-link"><i class="fa-brands fa-artstation fa-fw"></i><a href="https://www.github.com/brokoli5191" target="_blank">Github</a></p>
+					</div>
+					<div class="grid-row-box">
+						<h2>Contact</h2>
+						<p>Questions, wishes, problems, or everything else can also go to:</p>
+						<p><a href="mailto:brokoli5191@gmx.de" target="_blank">brokoli5191@gmx.de</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
