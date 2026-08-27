@@ -1,0 +1,20 @@
+<blog>
+    <post id="1">
+        <date>2026-01-19</date>
+        <title>First Blog Post</title>
+        <preview>Introducing the blog-tab!</preview>
+        <content>
+            Welcome visitor! 
+            
+            This is the first blog post!
+            
+            Since Richard created this webpage with a clear thought, my non existing coding skills are not needed.
+            
+            Anyways, this will mostly be a place for me to write about news, projects, tutorials, reviews and any other stuff I find interesting.
+            
+            Farewell for now!
+        </content>
+        <tag>new</tag>
+        <tag>introduction</tag>
+    </post>
+</blog>
